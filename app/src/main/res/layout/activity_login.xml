@@ -6,29 +6,33 @@
     android:orientation="vertical"
     android:id="@+id/main"
     android:gravity="center"
-    android:padding="24dp"
-    android:background="#F3F4F6">
+    android:padding="32dp"
+    android:background="@drawable/gradient_background">
+
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TO-Do"
         android:textColor="#333333"
-        android:textSize="22sp"
+        android:textSize="26sp"
         android:textStyle="bold"
         android:layout_gravity="center"
-        android:layout_marginBottom="24dp" />
+        android:layout_marginBottom="16dp" />
 
+    <!-- Profile Image -->
     <ImageView
         android:id="@+id/profileImage"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:src="@drawable/baseline_account_circle_24"
         android:padding="8dp"
-        android:scaleType="centerCrop" />
+        android:scaleType="centerCrop"
+        android:background="@drawable/circle_bg"
+        android:elevation="6dp"
+        android:layout_marginBottom="16dp"/>
 
-
-
+    <!-- Login Text -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -37,17 +41,19 @@
         android:textSize="22sp"
         android:textStyle="bold"
         android:layout_gravity="center"
-        android:layout_marginBottom="24dp" />
+        android:layout_marginBottom="20dp" />
 
+    <!-- Email Input -->
     <EditText
         android:id="@+id/emailInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Email"
         android:inputType="textEmailAddress"
-        android:padding="12dp"
-        android:backgroundTint="#CCCCCC"
-        android:layout_marginBottom="16dp" />
+        android:padding="14dp"
+        android:background="@drawable/input_bg"
+        android:layout_marginBottom="12dp" />
+
 
     <EditText
         android:id="@+id/passwordInput"
@@ -55,29 +61,34 @@
         android:layout_height="wrap_content"
         android:hint="Password"
         android:inputType="textPassword"
-        android:padding="12dp"
-        android:backgroundTint="#CCCCCC"
-        android:layout_marginBottom="16dp" />
+        android:padding="14dp"
+        android:background="@drawable/input_bg"
+        android:layout_marginBottom="12dp" />
+
 
     <TextView
         android:id="@+id/forgotPasswordText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Forgot Password?"
-        android:textColor="#202020"
+        android:textColor="#4F46E5"
         android:textSize="14sp"
-        android:layout_marginBottom="24dp"
-        android:layout_gravity="end" />
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center" />
+
 
     <Button
         android:id="@+id/loginButton"
-        android:layout_height="wrap_content"
-        android:layout_width="200dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
         android:text="Login"
         android:backgroundTint="#4F46E5"
         android:textColor="#FFFFFF"
-        android:padding="12dp"
+        android:textStyle="bold"
+        android:elevation="8dp"
         android:layout_marginBottom="16dp" />
+
 
     <TextView
         android:id="@+id/loginRedirect"
@@ -86,7 +97,7 @@
         android:text="Don't have an account? Sign Up"
         android:textColor="#666666"
         android:textSize="14sp"
-        android:gravity="center"
-        />
+        android:textStyle="bold"
+        android:gravity="center" />
 
 </androidx.appcompat.widget.LinearLayoutCompat>
